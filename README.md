@@ -7,6 +7,6 @@ Feedback on how to clean up the code is appreciated :)
 ### Hello World
 **[01-hello-world.go](01-hello-world)** - Our very first Go program!
 
-**[02-unit-tests.go](01-unit-tests.go)** - Explore how unit testing works with the built in testing package
+**[02-unit-tests.go](01-unit-tests)** - Explore how unit testing works with the built in testing package
 
-**[03-functions](03-functions.go)** - Let's learn the syntax of functions and how to catch multiple return values
+**[03-functions](03-functions)** - Let's learn the syntax of functions and how to catch multiple return values

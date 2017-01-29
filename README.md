@@ -7,6 +7,7 @@ Feedback on how to clean up the code is appreciated :)
 ### Hello World
 **[01-hello-world](01-hello-world)** - Our very first Go program!
 
-**[02-unit-tests](02-unit-tests)** - Explore how unit testing works with the built in testing package
+**[02-unit-tests.go](01-unit-tests.go)** - Yes we will unit test our examples. Go's shipped with a very good unit testing package
+called testing. We will also explore testify since it gives us assertion and mocking abilities.
 
 **[03-functions](03-functions)** - Let's learn the syntax of functions and how to catch multiple return values

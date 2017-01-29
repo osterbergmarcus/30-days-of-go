@@ -3,6 +3,8 @@ package functions
 import (
 	"fmt"
 	"testing"
+
+	"github.com/stretchr/testify/assert"
 )
 
 func TestMultipleReturns(t *testing.T) {
@@ -17,7 +19,8 @@ func TestFactorial(t *testing.T) {
 	val := Factorial(5)
 	t.Log(val)
 
-	// result should equal 120
+	assert.Equal(t, val, 120, "result should equal 120")
+
 	fmt.Println("result should equal 120", val == 120)
 }
 

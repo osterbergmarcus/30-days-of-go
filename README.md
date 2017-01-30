@@ -12,5 +12,5 @@ called testing. We will also explore testify since it gives us assertion and moc
 
 **[03-functions](03-functions)** - Let's learn the syntax of functions and how to catch multiple return values
 
-**[04-types](04-types)** - Go is all about types. Lets look into some common types and how to
+**[04-structs](04-structs)** - Go is all about types. Lets look into structs and methods and how to
 create our own types!

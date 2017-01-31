@@ -1,6 +1,5 @@
 # 30 Days Of Go
-I created this challange to learn the basics of [Go](https://golang.org/) in 30 days. I used my inspiration
-from the language design of golang, computer science topics and programming concepts in general to create this collection of challanges.
+I created this challange to learn the basics of [Go](https://golang.org/) in 30 days. I used my inspiration from computer science topics and programming concepts in general to create this collection of challanges.
 Learn by trial and error, hack on the exercises and run *go run* or *go test*.
 Feedback on how to clean up the code is appreciated :)
 
@@ -20,6 +19,15 @@ called testing. We will also explore testify since it gives us assertion and moc
 **[05-interfaces](05-interfaces)** - Polymorphism is a fancy word, lets figure out what this abstraction is good for.
 
 ### Can't store enough data
-** upcoming
+- up coming
 ### What do you know about data structures?
-** upcoming
+-- up coming
+
+### Never to wise for fibonacci
+-- up coming
+
+### Concurrency for the future
+-- up coming
+
+### build a web server
+-- up coming

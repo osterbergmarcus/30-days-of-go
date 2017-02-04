@@ -44,6 +44,7 @@ func (s Music) getData() map[string]string {
 }
 
 // with interfaces we can define what actions our types can execute
+// an empty interface can hold values of any type, we will explore this later
 
 // interfaces is a collection of method signatures
 // it has a name and type field similiar to structs

@@ -30,6 +30,25 @@ func (l Languages) MyMethod() string {
 	return str
 }
 
+// go has no classes and does not support inheritance.
+// in go you have the choice of composition
+// we can embedd structs in structs and interfaces in interfaces
+type Animal struct {
+	name string
+}
+
+type Robot struct {
+	Animal
+}
+
+func (f Animal) speak() {
+	fmt.Println("Go!")
+}
+
+func (r Robot) talk() {
+	fmt.Println("Beep")
+}
+
 func main() {
 	// assign values of a type using composite literals
 	concurrentLanguages := Languages{
@@ -56,4 +75,9 @@ func main() {
 	}
 
 	fmt.Println(langToUpperCase.MyMethod())
+
+	// compose Robot and Animal structs
+	cyborg := Robot{Animal{"gopher"}}
+	cyborg.speak()
+	cyborg.talk()
 }

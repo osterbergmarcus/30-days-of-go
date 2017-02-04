@@ -13,21 +13,22 @@ called testing. We will also explore testify since it gives us assertion and moc
 
 ** - I/O upcoming...
 ### Go is all about types
-
 **[04-structs](04-structs)** - Here we look into structs and how to create your own types!
 
 **[05-interfaces](05-interfaces)** - Polymorphism is a fancy word, lets figure out what this abstraction is good for.
 
 ### Can't store enough data
-- up coming
+**[06-slices](06-slices)** - Hold multiple values is key. Here we learn about the power of slices that are
+built on top of arrays.
+
 ### What do you know about data structures?
--- up coming
+-- upcoming
 
 ### Never to wise for fibonacci
--- up coming
+-- upcoming
 
 ### Concurrency for the future
--- up coming
+-- upcoming
 
 ### build a web server
--- up coming
+-- upcoming

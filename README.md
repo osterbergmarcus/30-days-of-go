@@ -18,7 +18,7 @@ called testing. We will also explore testify since it gives us assertion and moc
 **[05-interfaces](05-interfaces)** - Polymorphism is a fancy word, lets figure out what this abstraction is good for.
 
 ### Can't store enough data
-**[06-slices](06-slices)** - Hold multiple values is key. Here we learn about the power of slices that are
+**[06-slices](06-slices)** - We want to be able to hold multiple values. Here we learn about the power of slices that are
 built on top of arrays.
 
 **[07-maps](07-maps)** - Go has an associative array called map. Let's check it out!

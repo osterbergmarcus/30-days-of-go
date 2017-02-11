@@ -11,15 +11,27 @@ package main
 import "fmt"
 
 func main() {
+	type User struct {
+		name string
+		role string
+		id   int
+	}
+
 	// create a slice using composite literals
-	x := []string{"everything", "is", "data"}
+	x := []User{
+		{"User1", "admin", 1},
+		{"User2", "basic", 2},
+		{"User3", "basic", 3},
+	}
+	fmt.Println(x)
 
 	// give me a slice of items from index 0 to 1
-	everything := x[:1]
-	fmt.Println(everything)
+	someUser := x[:1]
+	fmt.Println(someUser)
+
 	// give me a slice of items from index 2 to end
-	data := x[2:]
-	fmt.Println(data)
+	anotherUser := x[2:]
+	fmt.Println(anotherUser)
 
 	// we can also use the make function to allocate a slice
 	y := make([]string, 10)
@@ -27,10 +39,10 @@ func main() {
 
 	// append slices to a slice
 	// give me index 1 but leave out index 2
-	y = append(x[1:2])
+	someUser = append(x[1:2])
 
 	// slices can be copied
-	clone := make([]string, len(x))
+	clone := make([]User, len(x))
 	copy(clone, x)
 	fmt.Println("Cloned slice:", clone)
 

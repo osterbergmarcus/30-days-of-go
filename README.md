@@ -1,5 +1,5 @@
 # 30 Days Of Go
-I created this challenge to learn the basics of [Go](https://golang.org/) in 30 days.
+Learn the basics of [Go](https://golang.org/) in 30 days.
 I created this collection of exercises from various computer science and programming concepts.
 
 ## Feedback is appreciated!

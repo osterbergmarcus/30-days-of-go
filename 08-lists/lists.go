@@ -1,7 +1,7 @@
 /*
 * if you are familiar with Arrays in JavaScript or Lists in any other languages
 * then you might know that a List contains your data in a ordered sequence
-* you can dynamically add and remove item
+* you can dynamically add and remove value
 *
 * List is a linear data structure with a starting point and ending point
 * we will work with slices here since they are flexible and extensible in comparsion to Arrays
@@ -28,7 +28,7 @@ func (list *List) Push(value interface{}) {
 	list.length++
 }
 
-// Pop - we need a method to pop the last item from the List
+// Pop - we need a method to pop the last value from the List
 func (list *List) Pop() interface{} {
 	// if the memory is empty then terminate function
 	if list.length == 0 {
@@ -45,7 +45,7 @@ func (list *List) Pop() interface{} {
 
 }
 
-// Unshift - to add an item at the begning of our list we need to move all current items to the side
+// Unshift - to add an value at the begning of our list we need to move all current values to the side
 func (list *List) Unshift(value interface{}) {
 	newMemory := []interface{}{value}
 
@@ -55,7 +55,7 @@ func (list *List) Unshift(value interface{}) {
 	list.length++
 }
 
-// Shif - remove the first item from list and move remaining items back one step
+// Shif - remove the first value from list and move remaining values back one step
 func (list *List) Shift() interface{} {
 	// if the memory is empty then terminate function
 	if list.length == 0 {

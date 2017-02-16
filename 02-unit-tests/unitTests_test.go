@@ -11,7 +11,9 @@ import (
 
 func TestMyFunction(t *testing.T) {
 	str := MyFunction()
-	t.Log(str)
+
+	// error will be printed only if the test fails
+	t.Error(str)
 }
 
 func TestMyOtherFunction(t *testing.T) {

@@ -38,8 +38,7 @@ func main() {
 		fmt.Println("loop:", loop[index])
 	}
 
-	// the second return value in maps is a bool
-	// indicating if the map has the key or not
+	// the second return value in maps is a bool indicating if the map has key or not
 	val, hasKey := x["key"]
 	fmt.Println("key exists:", val, hasKey)
 

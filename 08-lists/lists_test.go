@@ -21,6 +21,14 @@ func TestPush(t *testing.T) {
 	assert.Equal(t, list.memory[1], "Nice")
 }
 
+func TestPop(t *testing.T) {
+	assert.Equal(t, list.Pop(), "List")
+
+	if len(list.memory) != 2 {
+		t.Errorf("Expected length of memory to be 2 received %v", len(list.memory))
+	}
+}
+
 func TestGet(t *testing.T) {
 	assert.Equal(t, list.Get(1), "Nice")
 }

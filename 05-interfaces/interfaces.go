@@ -2,10 +2,11 @@
 // https://godoc.org/math/rand
 // https://godoc.org/strconv
 
-// you will notice that many functions in go has a signature of an interface
-// it means that the funciton will accept any value of any type that implements the interface
-// let's implement our own interface
-
+/*
+* you will notice that many functions in go has a signature of an interface
+* it means that the funciton will accept any value of any type that implements the interface
+* let's implement our own interface
+ */
 package main
 
 import (
@@ -22,8 +23,7 @@ type Music struct {
 	song, year, lyrics string
 }
 
-// we will have one getData function that can change its bahaviour
-// depending on its data type
+// function getData can change its bahaviour depending on its data type
 func (m Movie) getData() map[string]string {
 	movie := map[string]string{
 		"title": m.title,
@@ -47,19 +47,20 @@ func (s Music) getData() map[string]string {
 	return song
 }
 
-// with interfaces we can define what actions our types can execute
-// an empty interface can hold values of any type, we will explore this later
-
-// interfaces is a collection of method signatures
-// it has a name and type field similiar to structs
-// basiclly we're creating a interface for a method that can be
-// shared amongst data types that implements the same method
+/*
+* with interfaces we can define what actions our types can execute
+* an empty interface can hold values of any type which we will explore later
+*
+* interfaces is a collection of method signatures
+* it has a name and type field similiar to structs
+* basiclly we're creating a interface for a method that can be
+* shared amongst data types that implements the same method
+ */
 type StreamingService interface {
 	getData() map[string]string
 }
 
-// our canTakeManyTypes function can take many types
-// and change its behaviour
+// canTakeManyTypes can take many types and change its behaviour
 func canTakeManyTypes(i StreamingService) {
 	fmt.Printf("%T\n", i)
 

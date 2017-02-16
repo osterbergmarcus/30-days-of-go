@@ -8,9 +8,11 @@ import (
 	"strings"
 )
 
-// structs are used when we need a collection of data types
-// we can define names and types as a fields
-// that we then later can point to
+/*
+* structs are used when we need a collection of data types
+* we can define names and types as a fields
+* that we then later can point to
+ */
 type Languages struct {
 	x string
 	y string
@@ -23,16 +25,17 @@ type LanguagesRecord struct {
 	languages MyCustomType
 }
 
-// lets attatch a method to our Language struct
-// remember that functions takes a "receiver"?
+// attatch a method to our Language struct, remember that functions takes a "receiver"?
 func (l Languages) MyMethod() string {
 	str := strings.ToUpper(l.x) + strings.ToUpper(l.y)
 	return str
 }
 
-// go has no classes and does not support inheritance.
-// in go you have the choice of composition
-// we can embedd structs in structs and interfaces in interfaces
+/*
+* go has no classes and does not support inheritance
+* in go you have the choice of composition
+* we can embedd structs in structs and interfaces in interfaces
+ */
 type Animal struct {
 	name string
 }

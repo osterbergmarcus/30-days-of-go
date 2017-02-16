@@ -29,6 +29,26 @@ func TestPop(t *testing.T) {
 	}
 }
 
+func TestUnshift(t *testing.T) {
+	list.Unshift("List")
+
+	assert.Equal(t, list.memory[0], "List")
+
+	if len(list.memory) != 3 {
+		t.Errorf("Expected length of memory to be 3 received %v", len(list.memory))
+	}
+}
+
+func TestShift(t *testing.T) {
+	list.Shift()
+
+	assert.Equal(t, list.memory[0], "Very")
+
+	if len(list.memory) != 2 {
+		t.Errorf("Expected length of memory to be 2 received %v", len(list.memory))
+	}
+}
+
 func TestGet(t *testing.T) {
 	assert.Equal(t, list.Get(1), "Nice")
 }

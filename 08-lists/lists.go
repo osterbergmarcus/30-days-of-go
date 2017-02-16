@@ -1,10 +1,10 @@
 /*
 * if you are familiar with Arrays in JavaScript or Lists in any other languages
 * then you might know that a List contains your data in a ordered sequence
-* you can dynamically add and remove item*
-* List is a linear data strucutre with a starting point and ending point
-* we will work with slices here since
-* they are flexible and extensible in comparsion to Arrays
+* you can dynamically add and remove item
+*
+* List is a linear data structure with a starting point and ending point
+* we will work with slices here since they are flexible and extensible in comparsion to Arrays
  */
 
 package list
@@ -17,16 +17,20 @@ type List struct {
 
 // Push - we need a method to add a value to the end of our List
 func (list *List) Push(value interface{}) {
-	// append will increase the capacity and realocate the memory for us
+	/*
+	* we need to realocate new memory for our list with increased capacity
+	* copy over existing values and add new values to list
+	* the built in function append will do the hard work for us
+	 */
 	list.memory = append(list.memory, value)
 
 	// increase the length of our List
-	list.length = list.length + 1
+	list.length++
 }
 
 // Pop - we need a method to pop the last item from the List
 func (list *List) Pop() interface{} {
-	// if the memory is empty then return
+	// if the memory is empty then terminate function
 	if list.length == 0 {
 		return nil
 	}
@@ -39,6 +43,32 @@ func (list *List) Pop() interface{} {
 
 	return lastIndexValue
 
+}
+
+// Unshift - to add an item at the begning of our list we need to move all current items to the side
+func (list *List) Unshift(value interface{}) {
+	newMemory := []interface{}{value}
+
+	// using the operator  ... lets you spread out multiple values
+	list.memory = append(newMemory, list.memory...)
+
+	list.length++
+}
+
+// Shif - remove the first item from list and move remaining items back one step
+func (list *List) Shift() interface{} {
+	// if the memory is empty then terminate function
+	if list.length == 0 {
+		return nil
+	}
+
+	// decrease length and shrink memory by one, also return shifted value
+	firstIndexValue := list.memory[0]
+	list.memory = list.memory[1:]
+
+	list.length--
+
+	return firstIndexValue
 }
 
 // Get - Get will give us a specific value based on its index

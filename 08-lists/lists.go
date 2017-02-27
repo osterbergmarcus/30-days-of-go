@@ -1,7 +1,8 @@
 /*
 * if you are familiar with Arrays in JavaScript or Lists in any other languages
 * then you might know that a List contains your data in a ordered sequence
-* you can dynamically add and remove value
+* you can dynamically add and remove values
+* Lists are very useful when you are dealing with elements at the begining or end of your collection
 *
 * List is a linear data structure with a starting point and ending point
 * we will work with slices here since they are flexible and extensible in comparsion to Arrays
@@ -55,7 +56,7 @@ func (list *List) Unshift(value interface{}) {
 	list.length++
 }
 
-// Shif - remove the first value from list and move remaining values back one step
+// Shift - remove the first value from list and move remaining values back one step
 func (list *List) Shift() interface{} {
 	// if the memory is empty then terminate function
 	if list.length == 0 {

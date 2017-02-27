@@ -43,7 +43,6 @@ func (list *List) Pop() interface{} {
 	list.length = lastIndex
 
 	return lastIndexValue
-
 }
 
 // Unshift - to add an value at the begning of our list we need to move all current values to the side

@@ -11,8 +11,7 @@ Learn by trial and error, hack on the exercises and run *go run* or *go test* :)
 ### Hello World
 **[01-hello-world](01-hello-world)** - Our very first Go program!
 
-**[02-unit-tests](02-unit-tests)** - Yes we will unit test our examples. Go's shipped with a very good unit testing package
-called testing. We will also explore testify since it gives us assertion and mocking abilities.
+**[02-unit-tests](02-unit-tests)** - Yes we will unit test our examples. Go's shipped with a very good unit testing package called testing. We will also explore testify since it gives us assertion and mocking abilities.
 
 **[03-functions](03-functions)** - Let's learn the syntax of functions and how to catch multiple return values.
 

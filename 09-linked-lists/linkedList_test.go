@@ -31,7 +31,7 @@ func TestGet(t *testing.T) {
 	assert.Equal(t, node, gopher{"fOUR"})
 }
 
-func TestRemnve(t *testing.T) {
+func TestRemove(t *testing.T) {
 	linkedList.Remove(3)
 
 	if linkedList.Size() != 4 {

@@ -34,8 +34,11 @@ knowledge by implementing our own data structures. First out is Lists!
 **[09-linked-lists](09-linked-lists)** - A linked list is a very well known and used abstraction in common languages. Here we will create
 a very simple version.
 
-### Never to wise for fibonacci
--- upcoming
+**[10-trees]**
+
+**[11-binary-earch-trees]**
+
+**[12-graphs]**
 
 ### Concurrency for the future
 -- upcoming

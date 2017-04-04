@@ -2,7 +2,7 @@
 * Linked list is a linear data structure that servers as foundation for many abstract data structures
 * it's a sequence of elements also called nodes
 * every node has a value and a pointer to its sibling
-* the data is stored in a contiguously block of memory so adding or removing items without relocate memmory
+* the data is stored in a contiguously block of memory so adding or removing items without relocate memory
  */
 
 package LinkedLists

@@ -2,9 +2,9 @@
 // https://golang.org/doc/effective_go.html#allocation_make
 
 /*
-* the underlaying type for a slice is an array. Think about slices
-* as an abstraction on top of arrays. The nice thing with slices is
-* that they don't need to have a specifid capacity its length
+* the underlaying type for a slice is an array. Slices
+* works as an abstraction on top of arrays. The nice thing with slices is
+* that they don't need to have a specified capacity and its length
 * can dynamically be increased
  */
 
@@ -35,7 +35,7 @@ func main() {
 	anotherUser := x[2:]
 	fmt.Println(anotherUser)
 
-	// we can also use the make function to allocate a slice
+	// use the make function to allocate a slice
 	y := make([]string, 10)
 	fmt.Println(len(y))
 

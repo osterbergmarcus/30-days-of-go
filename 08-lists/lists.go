@@ -1,10 +1,8 @@
 /*
-* if you are familiar with Arrays in JavaScript or Lists in any other languages
-* then you might know that a List contains your data in a ordered sequence
-* you can dynamically add and remove values
+* List contains data in a ordered sequence and are good for dynamically add and remove values
 *
-* List is a linear data structure with a starting point and ending point
-* and are very useful when you are dealing with elements at the begining or end of your collection
+* List is a linear data structure with a starting point and ending point, this
+* is handy for dealing with elements at the begining or end of the collection
 * we will work with slices here since they are flexible and extensible in comparsion to Arrays
  */
 
@@ -16,22 +14,22 @@ type List struct {
 	length int
 }
 
-// Push - we need a method to add a value to the end of our List
+// Push - adds a value to the end of the List
 func (list *List) Push(value interface{}) {
 	/*
-	* we need to alocate new memory for our list with increased capacity
+	* alocates new memory for our list with increased capacity
 	* copy over existing values and add new values to list
-	* the built in function append will do the hard work for us
+	* the built in function append will do the hard work
 	 */
 	list.memory = append(list.memory, value)
 
-	// increase the length of our List
+	// increase the length of the List
 	list.length++
 }
 
-// Pop - we need a method to pop the last value from the List
+// Pop - pop the last value from the List
 func (list *List) Pop() interface{} {
-	// if the memory is empty then terminate function
+	// if the memory is empty then terminate
 	if list.length == 0 {
 		return nil
 	}
@@ -45,7 +43,7 @@ func (list *List) Pop() interface{} {
 	return lastIndexValue
 }
 
-// Unshift - to add an value at the begning of our list we need to move all current values to the side
+// Unshift - to add a value to the begining of the List, we need to move all current values to the side
 func (list *List) Unshift(value interface{}) {
 	newMemory := []interface{}{value}
 
@@ -55,9 +53,9 @@ func (list *List) Unshift(value interface{}) {
 	list.length++
 }
 
-// Shift - remove the first value from list and move remaining values back one step
+// Shift - removes the first value from the List and moves remaining values back one step
 func (list *List) Shift() interface{} {
-	// if the memory is empty then terminate function
+	// if the memory is empty then terminate
 	if list.length == 0 {
 		return nil
 	}
@@ -71,7 +69,7 @@ func (list *List) Shift() interface{} {
 	return firstIndexValue
 }
 
-// Get - Get will give us a specific value based on its index
+// Get - get returns a specific value based on its index
 func (list *List) Get(index int) interface{} {
 	return list.memory[index]
 }

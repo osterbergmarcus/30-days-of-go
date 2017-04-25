@@ -3,7 +3,7 @@
 // https://godoc.org/strconv
 
 /*
-* you will notice that many functions in go has a signature of an interface
+* many functions in go has a signature of an interface
 * it means that the funciton will accept any value of any type that implements the interface
 * let's implement our own interface
  */
@@ -48,7 +48,7 @@ func (s Music) getData() map[string]string {
 }
 
 /*
-* with interfaces we can define what actions our types can execute
+* interfaces can define what actions our types can execute
 * an empty interface can hold values of any type which we will explore later
 *
 * interfaces is a collection of method signatures

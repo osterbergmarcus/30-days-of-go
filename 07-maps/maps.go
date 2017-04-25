@@ -1,14 +1,14 @@
 // https://golang.org/doc/effective_go.html#maps
 // https://golang.org/doc/effective_go.html#blank
 
-// maps in go are key value based data structures similar to a hash map
+// maps in go are key value based data structures
 
 package main
 
 import "fmt"
 
 func main() {
-	// you can declare maps with the composite-literal
+	// maps can be  declared with the composite-literal
 	x := map[string]string{"key": "value"}
 	fmt.Println("x:", x)
 
@@ -16,7 +16,7 @@ func main() {
 	y := map[int]string{1: "value"}
 	fmt.Println("y:", y)
 
-	// we can also use make
+	// using make
 	z := make(map[string]bool)
 
 	// set keys

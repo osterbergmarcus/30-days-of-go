@@ -14,7 +14,7 @@
 * }
 *
 * - receiver is used for attaching methods to a type. We will look into how methods works
-* when learn about structs
+* when learning about structs
 *
 * - if the first letter of the identifier keyword is uppercase
 * then your function is exported

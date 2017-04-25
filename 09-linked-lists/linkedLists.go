@@ -1,8 +1,9 @@
 /*
-* Linked list is a linear data structure that servers as foundation for many abstract data structures
-* it's a sequence of elements also called nodes
+* Linked list is a linear data structure that is used as a foundation for many data structures
+* it's a sequence of elements known as nodes
 * every node has a value and a pointer to its sibling
-* the data is stored in a contiguously block of memory so adding or removing items without relocate memory
+* Linked list stores the data non-contiguously in memory, we can add or remove
+* nodes without relocating memory
  */
 
 package LinkedLists
@@ -26,14 +27,14 @@ func (linkedList *LinkedList) Size() int {
 	return linkedList.size
 }
 
-// Get - we need a way to read values from memory
+// Get - reads values from memory
 func (linkedList *LinkedList) Get(position int) interface{} {
 	/*
 	* in a linked list data are not stored in a indexed sequence
 	* so we can't randomly access the memory
 	 */
 	if linkedList.Size() != 0 && position <= linkedList.Size() {
-		// we keep track of the nodes while searching for right one
+		// keep track of the nodes while searching for right one
 		currentNode := linkedList.head
 
 		// jump through each node until we find the position we are looking for, starting from the head
@@ -53,7 +54,7 @@ func (linkedList *LinkedList) Get(position int) interface{} {
 func (linkedList *LinkedList) Add(value interface{}) {
 	newNode := &Node{value: value}
 
-	// if our linked list holds zero values then we start the chain by adding a new node as head
+	// if the linked list holds zero values then start the chain by adding a new node as head
 	if linkedList.size == 0 {
 		linkedList.head = newNode
 		linkedList.size++
@@ -63,7 +64,7 @@ func (linkedList *LinkedList) Add(value interface{}) {
 	// cache current node
 	currentNode := linkedList.head
 
-	// traversing our linked list until current node is pointing to nil
+	// loop through the chain of nodes until current node is pointing to nil
 	for currentNode.next != nil {
 		currentNode = currentNode.next
 	}
@@ -71,18 +72,18 @@ func (linkedList *LinkedList) Add(value interface{}) {
 	// pointing current node to our new node
 	currentNode.next = newNode
 
-	// finally we increase the size of our linked list
+	// finally increase the size of the linked list
 	linkedList.size++
 }
 
 // Remove - removes a node
 func (linkedList *LinkedList) Remove(position int) {
-	// if memory size is zero then terminate function
+	// if memory size is zero then terminate
 	if linkedList.size == 0 {
 		return
 	}
 
-	// if memory position don't exist then terminate function
+	// if memory position don't exist then terminate
 	if linkedList.Get(position) == nil {
 		return
 	}
@@ -101,13 +102,13 @@ func (linkedList *LinkedList) Remove(position int) {
 		currentNode = currentNode.next
 	}
 
-	// after we found the node we want to remove, take the next node and point previous node to it
+	// take the next node and point previous node to it
 	previousNode.next = currentNode.next
 
 	linkedList.size--
 }
 
-// Contains - Returns an slice of all nodes values
+// Contains - Returns a slice of all nodes values
 func (linkedList *LinkedList) Contains() []interface{} {
 	values := make([]interface{}, linkedList.Size(), linkedList.Size())
 

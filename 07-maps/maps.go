@@ -1,7 +1,7 @@
 // https://golang.org/doc/effective_go.html#maps
 // https://golang.org/doc/effective_go.html#blank
 
-// maps in go are key value based data structures
+// maps in go is a key value based data collection
 
 package main
 

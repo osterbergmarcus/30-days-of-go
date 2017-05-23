@@ -2,8 +2,7 @@
 // https://golang.org/doc/effective_go.html#allocation_make
 
 /*
-* the underlaying type for a slice is an array. Slices
-* works as an abstraction on top of arrays. The nice thing with slices is
+* slices is built on top of arrays. The convenient thing with slices is
 * that they don't need to have a specified capacity and its length
 * can dynamically be increased
  */

@@ -1,8 +1,7 @@
 /*
-* List contains data in a ordered sequence and are good for dynamically add and remove values
-*
-* List is a linear data structure with a starting point and ending point, this
-* is handy for dealing with elements at the begining or end of the collection
+* List is a linear data structure with a starting point and ending point, it
+* contains data in a ordered sequence
+* this is handy for dealing with elements at the begining or end of the collection
 * we will work with slices here since they are flexible and extensible in comparsion to Arrays
  */
 

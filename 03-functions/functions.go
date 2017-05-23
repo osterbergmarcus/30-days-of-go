@@ -2,8 +2,9 @@
 // https://golang.org/doc/effective_go.html#functions
 
 /*
-* functions in go are first class citizens
-* they support closures, recursions and multiple return statements
+* Go functions supports higher order functions, closures, recursions and multiple return statements
+* Nested function declarations are not supported unless the nested fucntion is
+* assigned to a varible
 *
 * the syntax of a function declaration in go looks like this:
 *
@@ -19,7 +20,6 @@
 * - if the first letter of the identifier keyword is uppercase
 * then your function is exported
 *
-* - multiple return values is really common for error handling
  */
 
 package functions

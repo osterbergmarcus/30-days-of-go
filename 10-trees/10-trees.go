@@ -1,7 +1,6 @@
 /*
 * Trees are used for representing data in a hierarchical structure
 * Tree consists of a root node, parent nodes and child nodes
-* There is a great variaty of tree like data structures to choose from
  */
 
 package Trees

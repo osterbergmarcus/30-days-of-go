@@ -3,8 +3,7 @@
 // https://godoc.org/strconv
 
 /*
-* many functions in go has a signature of an interface
-* it means that the funciton will accept any value of any type that implements the interface
+* Functions with a signature of an interface will accept any value of any type that implements the interface
 * let's implement our own interface
  */
 package main

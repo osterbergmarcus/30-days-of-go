@@ -1,6 +1,6 @@
 # 30 Days Of Go
 Learn the basics of [Go](https://golang.org/) in 30 days.
-I created this collection of exercises from various topics that I found interesting to learn the basics of Go!
+I created this collection of exercises from various topics that I find interesting.
 
 ## Feedback is appreciated!
 If you want to share your knowledge on how to write more idiomatic Go code, feel free to write me on [twitter](https://www.twitter.com/osterbergmarcus) or create a pull request.
@@ -23,18 +23,18 @@ called testing. We will also explore testify since it gives us assertion and moc
 **[06-slices](06-slices)** - We want to be able to hold multiple values. Here we learn about the power of slices that are
 built on top of arrays.
 
-**[07-maps](07-maps)** - Go has maps. A Key value based collection, Let's check it out!
+**[07-maps](07-maps)** - Go has maps. Let's check it out!
 
-### Building data structures
+### Abstract data structures
 **[08-lists](08-lists)** - So far we've learned about some of the built in types and data structures in Go. Time to pracctice our new
 knowledge by implementing our own data structures. First out is Lists!
 
 **[09-linked-lists](09-linked-lists)** - A linked list is a very well known and used abstraction in common languages. Here we will create
 a simple version.
 
-**[10-trees](10-trees)** - Fun with recursion.
+**[10-trees](10-trees)** - Trees are widley used. Lets try to create a basic tree structure.
 
-**[11-binary-earch-trees]**
+**[11-binary-search-trees]**
 
 
 ### Concurrency for the future

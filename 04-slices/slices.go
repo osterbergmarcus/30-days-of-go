@@ -1,5 +1,6 @@
 // https://golang.org/ref/spec#Slice_types
 // https://golang.org/doc/effective_go.html#allocation_make
+// https://golang.org/ref/spec#Composite_literals
 
 /*
 * slices is built on top of arrays. The convenient thing with slices is

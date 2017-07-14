@@ -1,5 +1,5 @@
 /*
-* Trees are used for representing data in a hierarchical structure
+* Trees are nonlinear and are used for representing data in a hierarchical structure
 * Tree consists of a root node, parent nodes and child nodes
  */
 

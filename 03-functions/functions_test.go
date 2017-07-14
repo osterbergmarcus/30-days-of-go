@@ -1,7 +1,6 @@
 package functions
 
 import (
-	"fmt"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -9,24 +8,19 @@ import (
 
 func TestMultipleReturns(t *testing.T) {
 	lang, learning := MultipleReturns("Go")
-	t.Logf("%v %t\n", lang, learning)
-
-	fmt.Printf("%v %t\n", lang, learning)
+	assert.Equal(t, lang, "Learning Go")
+	assert.Equal(t, learning, true)
 }
 
 func TestFactorial(t *testing.T) {
 	// 5!
 	val := Factorial(5)
-	t.Log(val)
 
-	assert.Equal(t, val, 120, "result should equal 120")
-
-	fmt.Println("result should equal 120", val == 120)
+	assert.Equal(t, val, 120, "should equal 120")
 }
 
 func TestCurry(t *testing.T) {
 	val := Curry("Learning ")("Golang")
-	t.Log(val)
+	assert.Equal(t, val, "Learning Golang")
 
-	fmt.Println(val)
 }

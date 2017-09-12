@@ -40,7 +40,7 @@ a simple version.
 **[10-trees](10-trees)** - Trees are very well known structures. Lets figure
 out how to traverese a tree.
 
-**[11-binary-search-trees]** Binary trees are special in the way that each node
+**[11-binary-search-trees](11-binary-search-trees)** Binary trees are special in the way that each node
 can have a maximum number of two children. Here we will explore the famous
 Binary Search Tree.
 

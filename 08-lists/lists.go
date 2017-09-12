@@ -5,6 +5,8 @@
 * we will work with slices here since they are flexible and extensible in comparsion to Arrays
  */
 
+// https://golang.org/ref/spec#Address_operators
+
 package list
 
 // List - this will be our structure

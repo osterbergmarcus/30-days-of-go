@@ -1,6 +1,7 @@
 # 30 Days Of Go
 Learn the basics of [Go](https://golang.org/) in 30 days.
-Collection of exercises that I used to learn Go.
+This is a collection of exercises that I've used to learn Go. Here we will look
+into some baisc computer science topics and learn how to move bytes around!
 
 ## Feedback is appreciated!
 If you want to share your knowledge on how to write more idiomatic Go code, feel free to write me on [twitter](https://www.twitter.com/osterbergmarcus) or create a pull request.
@@ -9,7 +10,7 @@ Writing tests is a good way to learn a new language. Pick your exercise, break t
 ***go test*** runs the tests
 ***go run <file name>.go*** to execute a exercise
 
-Have fun!
+(ﾉ◕ヮ◕)ﾉ Have fun!
 
 ### Hello World
 **[01-hello-world](01-hello-world)** - Our very first Go program!
@@ -33,16 +34,20 @@ built on top of arrays.
 **[08-lists](08-lists)** - So far we've learned about some of the built in types and data structures in Go. Time to pracctice our new
 knowledge by implementing our own data structures. First out is Lists!
 
-**[09-linked-lists](09-linked-lists)** - linked list is an old fella, but still a very well known and used abstraction. Here we will create
+**[09-linked-lists](09-linked-lists)** - Linked list is an old fella, but still a very well known and used abstraction. Here we will create
 a simple version.
 
-**[10-trees](10-trees)** - Trees are widley used. Lets try to create a basic tree structure.
+**[10-trees](10-trees)** - Trees are very well known structures. Lets figure
+out how to traverese a tree.
 
-**[11-binary-search-trees]**
+**[11-binary-search-trees]** Binary trees are special in the way that each node
+can have a maximum number of two children. Here we will explore the famous
+Binary Search Tree.
 
 
 ### Concurrency for the future
---
+**Go routins**
+**Channels**
 
 ### build a web server
 --
